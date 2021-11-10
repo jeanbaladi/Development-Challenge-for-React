@@ -1,0 +1,11 @@
+footer i {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+}
+footer {
+    position: relative;
+    height: calc(100vh - 820px);
+}

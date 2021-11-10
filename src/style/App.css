@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.container-Login {
+    height: 100vh;
+    max-height: 100%;
+    background-image: url("../Utils/img/background-login.jpg");
+    background-size: cover;
+    position: relative;
+}
+.position-login {
+    width: 100%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 20px;
+}
+.social-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 15px;
+    margin: 10px 0;
+}
+.social-red img {
+    width: 50px;
+    cursor: pointer;
+}
+label {
+    display: block;
+}
+label {
+    font-size: .8rem;
+    color: #181717;
+}
+i {
+    display: block;
+    text-align: right;
+    text-align: center;
+}
+form label i {
+    text-align: right;
+}
+.btn-style {
+    font-family: 'Rubik', sans-serif;
+    margin: 5px auto;
+    display: flex;
+    width: 150px;
+    height: 27px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    justify-content: center;
+    background: linear-gradient(to right, #71c6e2,#e243f6);
+    cursor: pointer;
+}
+.login {
+    opacity: 0;
+}
+.visible {
+    transition-duration: 1s;
+    transform: translate(0px, -85px);
+    opacity: 1 !important;
+}
+.translate-social {
+    transition-duration: 1s;
+    transform: translate(0px, 302px);
+}
+.btn-disabled:disabled {
+    font-family: 'Rubik', sans-serif;
+    margin: 5px auto;
+    display: flex;
+    width: 140px;
+    height: 27px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    justify-content: center;
+    background: linear-gradient(to right, #71c6e2,#e243f6);
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+::-webkit-input-placeholder {color: rgba(2, 2, 2, 0.513);} 
+::-moz-placeholder {color: rgba(2, 2, 2, 0.513);}   
+:-ms-input-placeholder {color: rgba(2, 2, 2, 0.513);}   
+:-moz-placeholder {color: rgba(2, 2, 2, 0.513);}   
+h2 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+[type="checkbox"]+span:not(.lever) {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 23px;
+}
