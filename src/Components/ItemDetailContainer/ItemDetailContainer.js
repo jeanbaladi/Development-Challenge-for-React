@@ -3,6 +3,7 @@ import {useParams} from "react-router"
 import { Link } from "react-router-dom";
 import Footer from "../footer/footer";
 import NavBar from "../navBar/navBar";
+import GoBack from "../GoBack/GoBack"
 // ================= style CSS =======================
 import "./style/ItemDetail.css"
 
@@ -18,7 +19,7 @@ const ItemDetailContainer = () => {
         fetch('https://my-json-server.typicode.com/improvein/dev-challenge/albums')
             .then(response => response.json())
             .then((data) => {
-                setTimeout(() => {setBandsDetail(data)}, 2000)
+                setTimeout(() => {setBandsDetail(data)}, 500)
             })
             .catch(err => console.log(err))
     }, [])
@@ -27,7 +28,7 @@ const ItemDetailContainer = () => {
         fetch('https://my-json-server.typicode.com/improvein/dev-challenge/bands')
             .then(response => response.json())
             .then((data) => {
-                setTimeout(() => {setBands(data)}, 2000)
+                setTimeout(() => {setBands(data)}, 500)
             })
             .catch(err => console.log(err))
     }, [])
@@ -50,11 +51,7 @@ const ItemDetailContainer = () => {
     return (
         <>
         <NavBar/>
-        <nav>
-            <ul>
-                <li><Link to="/main" >Go back</Link></li>
-            </ul>
-        </nav>
+        <GoBack />
         <div className="container">
             <div className="card-detail-special">
                 <div className="card-title">

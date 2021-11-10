@@ -1,0 +1,22 @@
+nav .position-go-back {
+    position: relative;
+    width: 100%;
+}
+nav .position-go-back .go-back{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    display: flex;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-color: rgb(167, 167, 167);
+    height: 50px;
+    border-radius: 30px;
+    background-position: center;
+    align-items: center;
+}
+.nav-go-back {
+    background-color: transparent;
+    max-width: 12vw;
+    box-shadow: none;
+}

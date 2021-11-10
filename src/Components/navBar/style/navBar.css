@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Oswald&family=Rubik&display=swap');
 nav ul {
     display: flex;
     justify-content: center;
 }
-nav ul li:nth-child(10) a {
-    position: absolute;
+nav .log-out a{
+    position: fixed;
     right: 20px;
+    bottom: 15px;
+    list-style: none;
+    background-image: url('../../../Utils/img/log-out.png');
+    background-repeat: no-repeat;
+    background-color: rgb(167, 167, 167);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+}
+nav ul li a {
+    font-family: 'New Rocker', cursive;
+    color: #000000;
+    font-size: 1.5rem;
 }

@@ -16,7 +16,9 @@ const NavBar = () => {
                 <li><Link to="/main/rock">rock</Link></li>
                 <li><Link to="/main/grunge">grunge</Link></li>
                 <li><Link to="/main/progressive-metal">progressive-metal</Link></li>
-                <li><Link to="/">logout</Link></li>
+            </ul>
+            <ul>
+                <li className="log-out"><Link to="/"></Link></li>
             </ul>
         </nav>
     )

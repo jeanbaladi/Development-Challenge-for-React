@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
+import GoBack from "../../../GoBack/GoBack";
 import NavBar from "../../../navBar/navBar";
+
 // ============== style CSS ======================
 import "../Products.css"
 
@@ -15,7 +17,7 @@ const ItemList = () => {
         fetch('https://my-json-server.typicode.com/improvein/dev-challenge/bands')
             .then(response => response.json())
             .then((data) => {
-                setTimeout(() => {setBands(data)}, 2000)
+                setTimeout(() => {setBands(data)}, 500)
             })
             .catch(err => console.log(err))
     }, [])
@@ -34,11 +36,8 @@ const ItemList = () => {
         }else if(id) {
             return (
                 <>
-                <nav>
-                    <ul>
-                        <li><Link to="/main" >Go back</Link></li>
-                    </ul>
-                </nav>
+                <NavBar/>
+                <GoBack/>
                 <div className="container">
                     <div className="card-position-detail">
                     {bands.filter(item => item.genreCode === id).map((items) => {
