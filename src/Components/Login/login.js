@@ -31,7 +31,7 @@ function Login() {
 
         //======================= Sign up form =============================
     const register = () => {
-        if((user.length === 0) || (password.length === 0)) {
+        if((user.length === 0) && (password.length === 0)) {
             document.getElementById("txtId").placeholder = "Please, complete your data";
             document.getElementById("pwd").placeholder = "Please, complete your data";
         }else {

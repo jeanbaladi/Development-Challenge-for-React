@@ -19,4 +19,5 @@ nav .position-go-back .go-back{
     background-color: transparent;
     max-width: 12vw;
     box-shadow: none;
+    background-image: none;
 }
